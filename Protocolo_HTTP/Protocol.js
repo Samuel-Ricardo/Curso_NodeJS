@@ -15,7 +15,7 @@
 var http = require("http") // modulo padrao do node // default node module //
 
 http.createServer(function (request, resp) {
-  return resp.end("olá")
+  return resp.end("Hello World!")
 }).listen(3308)
 
-console.log("O servidor está rodande")
+console.log("O servidor está rodando")
