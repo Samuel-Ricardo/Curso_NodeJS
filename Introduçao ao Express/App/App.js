@@ -10,7 +10,7 @@ const app = express();
 
 app.get("/",function(requisicao,resposta){
 
-    resposta.send("Seja bem vindo ao meu app")
+    resposta.sendFile(__dirname+"/HTML/index.html")
 })
 
 app.get("/About", function(req,res){
