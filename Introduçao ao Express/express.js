@@ -13,7 +13,13 @@ app.get("/",function(requisicao,resposta){
     resposta.send("Seja bem vindo ao meu app")
 })
 
+app.get("/About", function(req,res){
+    res.send("Sobre a página")
+})
 
+app.get("/blog", function(req,res){
+    res.send("Welcome to my blog")
+})
 
 app.listen(8081, function(){
 
