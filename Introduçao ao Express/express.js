@@ -6,7 +6,10 @@ const app = express();
 
 // var app = uma nova instancia do express gerada a partir da funçao construtora // var app = uma nova instancia do express gerada a partir da funçao construtora //
 
-app.listen(8081)
+app.listen(8081, function(){
+
+    console.log("Servidor ronadndo na url localhost: 8081")
+})
 
 //app.listem(porta)
 
