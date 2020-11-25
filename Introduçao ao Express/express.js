@@ -1,7 +1,13 @@
-var express = require("express")
+const express = require("express")
 
 // var express = funçao construtora do express // var express = construct function of express //
 
-var app = express();
+const app = express();
 
 // var app = uma nova instancia do express gerada a partir da funçao construtora // var app = uma nova instancia do express gerada a partir da funçao construtora //
+
+app.listen(8081)
+
+//app.listem(porta)
+
+// função que inicia o servidor abstraindo o código usando em /Protocolo_HTTP/Protocol.js // function that starts the server by abstracting the code using at /Protocolo_HTTP/Protocol.js //
