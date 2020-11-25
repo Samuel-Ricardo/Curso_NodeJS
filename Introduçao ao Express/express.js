@@ -21,6 +21,11 @@ app.get("/blog", function(req,res){
     res.send("Welcome to my blog")
 })
 
+app.get("/Hello/:name/:age", function(req,res){
+
+    res.send("<h1> Hello " + req.params.name+" </h1>"+ "<h2> Sua Idade é: "+ req.params.age+" </h2>")
+})
+
 app.listen(8081, function(){
 
     console.log("Servidor ronadndo na url http://localhost:8081")
