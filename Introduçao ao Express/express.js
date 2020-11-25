@@ -11,3 +11,6 @@ app.listen(8081)
 //app.listem(porta)
 
 // função que inicia o servidor abstraindo o código usando em /Protocolo_HTTP/Protocol.js // function that starts the server by abstracting the code using at /Protocolo_HTTP/Protocol.js //
+
+// Deve ser a ultima linha de código // Must be the last line of code //
+
