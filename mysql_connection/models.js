@@ -7,13 +7,15 @@ const sequelize = new Sequelize("siscad","root","",{
     dialect: "mysql"  
 })
 
-// verify connection
-sequelize.authenticate().then(function(){
+//Criar uma tabela // Create a table
+const postagem = sequelize.define('postagems', {
 
-    console.log("Conectado com sucesso")
+    title: {
+        type: Sequelize.STRING
+    },
 
-}).catch((error) => {
-    
-    console.log('Erro ao Conectar: '+ error)
+    conteudo: {
+        type: Sequelize.TEXT
+    }
 
 })
