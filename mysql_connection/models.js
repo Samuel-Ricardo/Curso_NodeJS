@@ -19,3 +19,10 @@ const postagem = sequelize.define('postagems', {
     }
 
 })
+
+// Sincroniza com o banco, fazendo assim ele criar a tabela // Synchronizes with the database, making it create the table //
+
+postagem.sync({
+   // para garantir que a tabela será criada // to make sure the table will be created //
+    force: true
+})
