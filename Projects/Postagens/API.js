@@ -28,7 +28,7 @@ const Sequelize = require('sequelize')
 
         app.get('/registration/postagem', (req, res) => {
 
-            res.send('Rota de cadastro de posts')
+            res.render('form.handlebars')
         })
 
 app.listen(8081, () =>{
