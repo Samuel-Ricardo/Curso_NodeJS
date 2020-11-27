@@ -4,12 +4,7 @@ const app = express();
 const handlebars = require('express-handlebars')
 
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('siscad','root','',{
 
-    host: 'localhost',
-    port: '3038',
-    dialect: 'mysql' 
-})
 
 // Config
 
@@ -19,7 +14,14 @@ const sequelize = new Sequelize('siscad','root','',{
        app.engine('handlebars',handlebars(defaultLayout: 'main'))
        app.set('view engine', 'handlebars')
 
-    //
+    // conexao com banco de dados // connect whit database
+
+        const sequelize = new Sequelize('siscad','root','',{
+
+            host: 'localhost',
+            port: '3038',
+            dialect: 'mysql' 
+        })
 
 app.listen(8081, () =>{
 
