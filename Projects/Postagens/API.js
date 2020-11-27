@@ -3,12 +3,17 @@ const app = express();
 
 const handlebars = require('express-handlebars')
 
-//  Config
-    //  Template.Engine
+const Sequelize = require('sequelize')
+
+// Config
+
+    // configurando o handlebars  como Template Engine do projeto // configuring handlebars as the project's Template Engine //
+
+    // Template.Engine
        app.engine('handlebars',handlebars(defaultLayout: 'main'))
        app.set('view engine', 'handlebars')
 
-// configurando o handlebars  como Template Engine do projeto // configuring handlebars as the project's Template Engine //
+    //
 
 app.listen(8081, () =>{
 
