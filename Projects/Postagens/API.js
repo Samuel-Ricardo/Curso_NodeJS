@@ -4,6 +4,12 @@ const app = express();
 const handlebars = require('express-handlebars')
 
 const Sequelize = require('sequelize')
+const sequelize = new Sequelize('siscad','root','',{
+
+    host: 'localhost',
+    port: '3038',
+    dialect: 'mysql' 
+})
 
 // Config
 
