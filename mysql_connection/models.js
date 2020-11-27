@@ -28,6 +28,11 @@ postagem.sync({
 })
 */
 
+postagem.create({
+    title: "Titulo ;-;",
+    conteudo: "Muito conteudo de qualidade que tu vai gostar de ver"
+})
+
 const user = sequelize.define("Users",{
 
     name: {
