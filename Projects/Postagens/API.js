@@ -23,6 +23,14 @@ const Sequelize = require('sequelize')
             dialect: 'mysql' 
         })
 
+
+        // rotas // routes //
+
+        app.get('/registration/postagem', (req, res) => {
+
+            res.send('Rota de cadastro de posts')
+        })
+
 app.listen(8081, () =>{
 
     console.log("Servidor esta rodando na url http://localhost:8081")
