@@ -11,7 +11,7 @@ const Sequelize = require('sequelize')
     // configurando o handlebars  como Template Engine do projeto // configuring handlebars as the project's Template Engine //
 
     // Template.Engine
-       app.engine('handlebars',handlebars(defaultLayout: 'main'))
+       app.engine('handlebars',handlebars({defaultLayout: 'main'}))
        app.set('view engine', 'handlebars')
 
     // conexao com banco de dados // connect whit database
