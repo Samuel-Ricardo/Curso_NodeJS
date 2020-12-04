@@ -30,6 +30,12 @@ const Post = require('./Model/Post')
             res.render('form')
         })
 
+        app.get('/home', (req,res) => {
+
+            res.render('./Views/home.handlebars')
+
+        })
+
         app.post('/add', (req,res) => {
 
             Post.create({
@@ -38,7 +44,7 @@ const Post = require('./Model/Post')
                 conteudo: req.body.conteudo
             }).then(() => {
 
-                res.send('Post created successfully')
+                res.redirect('/home')
             }).catch((error) => {
 
                 res.send('Error: ' + error)
