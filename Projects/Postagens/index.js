@@ -36,6 +36,12 @@ const Post = require('./Model/Post')
 
                 title: req.body.title,
                 conteudo: req.body.conteudo
+            }).then(() => {
+
+                res.send('Post created successfully')
+            }).catch((error) => {
+
+                res.send('Error: '+error)
             })
         })
 
