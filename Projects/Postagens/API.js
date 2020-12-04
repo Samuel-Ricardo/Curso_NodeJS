@@ -31,6 +31,13 @@ const Sequelize = require('sequelize')
             res.render('form')
         })
 
+        app.post('/add', (req,res) => {
+
+            res.send('Formulário Recebido ;)')
+        })
+
+
+
 app.listen(8081, () =>{
 
     console.log("Servidor esta rodando na url http://localhost:8081")
