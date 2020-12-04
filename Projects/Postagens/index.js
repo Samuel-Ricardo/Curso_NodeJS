@@ -32,7 +32,7 @@ const Post = require('./Model/Post')
 
         app.get('/home', (req,res) => {
 
-            res.render('./Views/home.handlebars')
+            res.render('home')
 
         })
 
