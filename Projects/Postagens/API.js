@@ -4,7 +4,7 @@ const BodyParer = require('body-parser')
 
 const handlebars = require('express-handlebars')
 
-const Sequelize = require('sequelize')
+
 
 
 // Config
@@ -19,14 +19,6 @@ const Sequelize = require('sequelize')
 
        app.use(BodyParer.urlencoded({extended: false}))
        app.use(BodyParer.json())
-    // conexao com banco de dados // connect whit database
-
-        const sequelize = new Sequelize('siscad','root','',{
-
-            host: 'localhost',
-            port: '3038',
-            dialect: 'mysql' 
-        })
 
 
         // rotas // routes //
