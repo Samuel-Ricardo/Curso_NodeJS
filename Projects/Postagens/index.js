@@ -41,7 +41,7 @@ const Post = require('./Model/Post')
                 res.send('Post created successfully')
             }).catch((error) => {
 
-                res.send('Error: '+error)
+                res.send('Error: ' + error)
             })
         })
 
