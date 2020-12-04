@@ -11,6 +11,17 @@ const Sequelize = require('sequelize')
     })
 
 
+    // verify connection
+        sequelize.authenticate().then(function(){
+
+            console.log("Conectado com sucesso")
+
+        }).catch((error) => {
+            
+            console.log('Erro ao Conectar: '+ error)
+
+        })
+
     module.exports = {
 
         Sequelize: Sequelize,
