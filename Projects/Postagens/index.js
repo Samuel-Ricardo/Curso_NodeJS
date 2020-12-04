@@ -4,6 +4,8 @@ const BodyParer = require('body-parser')
 
 const handlebars = require('express-handlebars')
 
+const Post = require('./Model/Post')
+
 
 
 
@@ -30,9 +32,11 @@ const handlebars = require('express-handlebars')
 
         app.post('/add', (req,res) => {
 
-            res.send('Titulo: '+req.body.title+', Conteudo: '+ req.body.conteudo)
+            Post.create({
 
-            
+                title: req.body.title,
+                conteudo: req.body.conteudo
+            })
         })
 
 

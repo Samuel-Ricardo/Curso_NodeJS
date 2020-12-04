@@ -1,8 +1,6 @@
 const dataBase = require('../DAO/ConnectionFactory')
 
-/*
 
-// Deve ser executado apenas uma vez, para criar a tabela // Must be executed only once, to create the table // 
 
 const Post = dataBase.sequelize.define('posts', {
 
@@ -15,7 +13,13 @@ const Post = dataBase.sequelize.define('posts', {
     }
 })
 
+/*
+
+// Deve ser executado apenas uma vez, para criar a tabela // Must be executed only once, to create the table // 
+
 Post.sync({force: true})
 
 */
+
+module.exports = Post;
 
