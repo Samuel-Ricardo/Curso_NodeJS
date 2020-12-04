@@ -2,7 +2,7 @@ const dataBase = require('../DAO/ConnectionFactory')
 
 
 
-const Post = dataBase.sequelize.define('posts', {
+const Post = dataBase.sequelize.define('postagems', {
 
     title: {
         type: dataBase.Sequelize.STRING
