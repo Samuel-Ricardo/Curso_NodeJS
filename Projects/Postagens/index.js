@@ -32,7 +32,12 @@ const Post = require('./Model/Post')
 
         app.get('/home', (req,res) => {
 
-            res.render('home')
+            Post.all().then((posts) => {
+
+                res.render('home',{posts: posts})
+            })
+
+//res.render('home')
 
         })
 
