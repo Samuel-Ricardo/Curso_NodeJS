@@ -57,6 +57,17 @@ const Post = require('./Model/Post')
         })
 
 
+        app.get('/delete/:id', (req,res) =>{
+
+            Post.destroy({where: {'id': req.params.id}}).then(()=>{
+
+                res.send('postagem deletada com sucesso')
+            }).catch((error)=>{
+
+                    res.send('erro ao deletar:' + error)
+                })
+        })
+
 
 app.listen(8081, () =>{
 
