@@ -32,7 +32,7 @@ const Post = require('./Model/Post')
 
         app.get('/home', (req,res) => {
 
-            Post.all().then((posts) => {
+            Post.findAll().then((posts) => {
 
                 res.render('home',{posts: posts})
             })

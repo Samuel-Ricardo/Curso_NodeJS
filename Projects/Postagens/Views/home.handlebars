@@ -1,3 +1,11 @@
 <h1>Lista de posts: </h1>
 
-{{posts}}
+{{#each posts}}
+
+    <h1>Titulo: {{title}}</h1>
+
+    <p>Conteudo: {{conteudo}}</p>
+
+    <hr>
+
+{{/each}}
