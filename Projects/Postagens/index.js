@@ -33,8 +33,8 @@ const Post = require('./Model/Post')
         app.get('/home', (req,res) => {
             
             Post.findAll({order: [['id','DESC']]}).then((posts) => {
-                console.log(posts)
-                res.render('home',{posts: posts})
+                
+                res.render('home', {posts: posts})
             })
 
 //res.render('home')
